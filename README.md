@@ -1,2 +1,2 @@
-# mikrotik-page
- A simple Design for an internet provider login page.
+# internet-provider-pages
+ A simple Design for a multiple internet provider pages.
