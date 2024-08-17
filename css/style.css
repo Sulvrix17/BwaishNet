@@ -198,6 +198,18 @@ input[type="button"]:hover {
         width: 90vw;
     }
 
+    h1 {
+        font-size: larger;
+    }
+
+    h3 {
+        font-size: small;
+    }
+
+    .footer h3 {
+        font-size: small;
+    }
+
     .hero-img {
         width: 90vw;
     }
