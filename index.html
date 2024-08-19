@@ -10,9 +10,9 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="top" title="الرجوع للأعلى">▲</button>
     <div class="header">
         <div class="container">
-            <!-- <img src="assets/hero.svg" alt=""> -->
             <?xml version="1.0" encoding="UTF-8"?>
             <svg viewBox="0 0 1364 960" xmlns="http://www.w3.org/2000/svg" class="hero-img">
                 <path
@@ -363,7 +363,9 @@
         </div>
         <div class="container">
             <div class="error-container">
-                <li>الرمز المستخدم غير صحيح</li>
+                <li id="error1">◉ يرجى ملء الحقول!</li>
+                <li id="error2">الرمز المستخدم غير صحيح</li>
+                <li id="error3">انتهت صلاحية الكرت</li>
             </div>
         </div>
     </div>
@@ -392,7 +394,7 @@
                     </span>
                     <input type="password" name="password" id="password" placeholder="كلمة المرور" class="input">
                 </label>
-                <input type="button" value="دخول">
+                <input type="button" value="تسجيل الدخول" id="join-btn" onclick="login()">
             </form>
             <br>
             <br>
@@ -541,6 +543,7 @@
         </div>
     </div>
     <br>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

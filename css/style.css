@@ -2,11 +2,18 @@
     --font-family: "Cairo", sans-serif;
     --primary-color: #0077b6;
     --secondary-color: #f0f0f0;
-    --teritary-color: #C43348;
+    --tertiary-color: #B63F00;
+    --quaternary-color: #FFC72E;
+    --senary-color: #1CB600;
 }
 
 body {
     height: 100vh;
+    margin: 0;
+}
+
+::placeholder {
+    user-select: none;
 }
 
 * {
@@ -61,6 +68,17 @@ tr:last-child td {
     border-bottom-right-radius: 25px;
 }
 
+.no-select {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+}
+
 .hero-img {
     width: 400px;
 }
@@ -77,8 +95,8 @@ input::selection {
 h1 {
     margin: 0;
     color: var(--primary-color);
-    user-select: none;
     font-size: x-large;
+    user-select: none;
 }
 
 h3 {
@@ -98,13 +116,16 @@ a {
 
 li {
     margin: 10px 0 10px 0;
-    color: var(--teritary-color);
+    color: var(--tertiary-color);
     direction: rtl;
     display: none;
     user-select: none;
+    font-weight: 500;
 }
 
-span {}
+br {
+    user-select: none;
+}
 
 .container {
     margin: 0;
@@ -165,11 +186,10 @@ input[type="button"] {
     height: 50px;
     border-radius: 30px;
     border: none;
-    background-color: var(--primary-color);
     color: white;
     font-size: 20px;
     margin-top: 20px;
-    transition: all 0.3s ease;
+    transition: scale 0.3s ease;
     user-select: none;
 }
 
@@ -177,12 +197,68 @@ input[type="button"]:active {
     scale: 90%;
 }
 
-input[type="button"]:hover {
+/* input[type="button"]:hover {
     background-color: #0089d3;
+} */
+
+#join-btn {
+    background-color: var(--primary-color);
+}
+
+#cont-btn {
+    background-color: var(--quaternary-color);
+}
+
+#leave-btn {
+    background-color: var(--tertiary-color);
+}
+
+#index-btn {
+    background-color: var(--senary-color);
 }
 
 .scroll-icon {
     width: 35px;
+}
+
+#top {
+    height: 50px;
+    width: 55px;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    border: 3px solid white;
+    background-color: var(--primary-color);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 90px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    line-height: 15px;
+    text-align: center;
+    user-select: none;
+}
+
+#top:hover {
+    background-color: #0076b66a;
+    /* Add a dark-grey background on hover */
 }
 
 .footer h3 {
@@ -205,6 +281,7 @@ input[type="button"]:hover {
     h3 {
         font-size: small;
     }
+
 
     .footer h3 {
         font-size: small;
