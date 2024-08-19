@@ -357,179 +357,20 @@
                     d="m1251.5 486.34c-5.011 0-9.087-4.077-9.087-9.087 0-5.011 4.077-9.087 9.087-9.087 5.011 0 9.087 4.077 9.087 9.087s-4.076 9.087-9.087 9.087zm0-15.331c-3.443 0-6.244 2.801-6.244 6.244s2.801 6.244 6.244 6.244 6.244-2.801 6.244-6.244c-1e-3 -3.443-2.802-6.244-6.244-6.244z"
                     fill="#4E80C2" />
             </svg>
-
-            <h1>مرحبًا بكم في شبكة بويش نت</h1>
-            <h3>!لا تستخدم الانترنت في ما لا يرضي الله</h3>
-        </div>
-        <div class="container">
-            <div class="error-container">
-                <li>الرمز المستخدم غير صحيح</li>
-            </div>
+            <h1>!تم تسجيل الدخول بنجاح</h1>
+            <h3>اضغط متابعة لمعرفة تفاصيل حسابك</h3>
         </div>
     </div>
+    <br>
     <div class="content">
         <div class="container">
             <form action="">
-                <label class="label">
-                    <span class="icon">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-white user-icon" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-width="1.25"
-                                d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z">
-                            </path>
-                        </svg>
-                    </span>
-                    <input type="text" name="username" id="username" placeholder="اسم المستخدم" class="input">
-                </label>
-                <label class="label">
-                    <span class="icon">
-                        <svg class=" w-6 h-6 text-gray-800 dark:text-white password-icon" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-width="2"
-                                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z">
-                            </path>
-                        </svg>
-                    </span>
-                    <input type="password" name="password" id="password" placeholder="كلمة المرور" class="input">
-                </label>
-                <input type="button" value="دخول">
+                <input type="button" value="متابعة" id="cont-btn" onclick="status()">
             </form>
             <br>
             <br>
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg class="scroll-icon" fill="none" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="35" height="35" fill="url(#a)" />
-                <defs>
-                    <pattern id="a" width="1" height="1" patternContentUnits="objectBoundingBox">
-                        <use transform="scale(.02)" xlink:href="#b" />
-                    </pattern>
-                    <image id="b" width="50" height="50"
-                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAuhJREFUaEPtl01rU0EUhp+5qR+Jirp1oT9AwY0fEBFp0yRQ/PgH4sqN0rQLEW13UrUgJqWuXAn+AMGCH0nTCqILLbpRd+LCvVQ00UCSkRtrc5Ob5HbuzI0Sb5aXOWfmOe97Zk4EA/ITA8JBCPKvKRkqEioSUAVCawVUWN9p/wNFzi/EiMUeAHHgJrnEjO9y6QRmitMgphCsUC6luXuq3Cldd0Uyi0mEyK8HSXGduZEpnTMpx2aWZhDyquMMZ5gbeagGMl7Yi2W9A3b8FZh2CPiGVd3P7fRnNRB79XgxjsWTFhi4RS5xSbm6KgGTxWtIppshogS1k+SSz7ql8W72fsP4gLDhvEH6qYxPiI2D9ANGA0INJEgYTQh1kCBgDED4AzEJYwjCP4gJGIMQ3iAX83sYihykVllifqziusMnF48jxSNgu9Kj6X7sviPkGNnR5649zi1vZXc9SZUPzCc+qr8jF4r72CTeg9wGvAIrTW54VRtGBWJieRfUnwJHgDLV6gHupD+pveyTxRQSO8naz3oNpLRglCHIQ/3w+hEEp8kmFhRBXkaRP+yRwK6GPowuhO2KVesE94Z/qoHYqxvStlUFH8o0utExxUL3nlDdc43Ke0S5XNhJxbItdrTZ0LzFio6SjX9xVWcifwwij9sGTceyHgPg773svw4OF/AGEU123MuZtdst0PLdGEwwEN7Xr5NGGyY4CDUQPz1j20wM3UdKCbWz5FIv3FZU7MMuFvLukfZAVWV6eVejJ9rTqoPYGUzAGIRQt5a7Z1pvGNnjNjMVa8xaugfqpMRGC9DDpv6s5RcmIAg9a6nCBAhhDqR5AXTumc2lmuvFNmAnZy31reXM1piTagUQh5qfG7MZLVMscgUiyY6T9IZGDfcisyDdlHHua1iJP6nNg/SCCQjCbI90ngCaPRMgRLAgTWWuNBi31G8wm/zqswU8w4Kxlue25heEIOZrqpcxVESvfuajQ0XM11Qv48Ao8guM9sdCVCeZNwAAAABJRU5ErkJggg==" />
-                </defs>
-            </svg>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <table class="table">
-                <tr>
-                    <th colspan="3">
-                        <span>أسعار الكروت</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>يوم</td>
-                    <td>200 ميقا</td>
-                    <td>100 ريال</td>
-                </tr>
-                <tr>
-                    <td>3 أيام</td>
-                    <td>450 ميقا</td>
-                    <td>200 ريال</td>
-                </tr>
-                <tr>
-                    <td>اسبوع</td>
-                    <td>1500 ميقا</td>
-                    <td>500 ريال</td>
-                </tr>
-                <tr>
-                    <td>شهر</td>
-                    <td>6 قيقا </td>
-                    <td>2000 ريال</td>
-                </tr>
-                <tr>
-                    <td>شهر</td>
-                    <td>13 قيقا</td>
-                    <td>4000 ريال</td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <br>
-            <table>
-                <tr>
-                    <th colspan="3">
-                        <span>أماكن بيع الكروت </span>
-                    </th>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات الخير - خلف فندق مكة</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات البركة - مفرق روكب</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات النور - الشارع العام بويش</span></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><span>تموينات الزبيدي - الشارع العام بويش</span></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><span>كشك محمد محمود - بجانب صيدلية البستان</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>بقالة الحرمين - الشارع العام بويش</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>كشك القدسي - بجانب مركز بن جميل</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات ابو بشير - خلف فندق مكة</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات الديني - خلف فندق مكة</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>بقالة باعطيه - خلف فندق مكة</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات الدره - بجانب مسجد الخير</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات القدس - الشارع العام بويش</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات الورد - الشارع العام بويش</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات المسيلة - الشارع العام بويش</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>كشك طاهر جياش - بجانب ثلاجة الحرمين</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>بقالة باعوشة - خلف ثلاجة الحرمين</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>سوبر ماركت الزعفران - مفرق روكب</span></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><span>تموينات الجوهرة - الشارع العام بويش</span></td>
-                </tr>
-
-            </table>
         </div>
     </div>
-    <br>
-    <br>
     <br>
     <div class="footer">
         <div class="container">
@@ -537,10 +378,11 @@
             <h3>للاستفسار يرجى التواصل مع إدارة الشبكة</h3>
             <h3 style="user-select:text;">جوال : 774553476</h3>
             <br>
-            <a href="https://github.com/Sulvrix17">Made with 🤍 By Sulvrix_<a>
+            <a href="https://github.com/Sulvrix17">Made By Sulvrix_<a>
         </div>
     </div>
     <br>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
