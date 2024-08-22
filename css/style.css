@@ -12,6 +12,10 @@ body {
     margin: 0;
 }
 
+html {
+    height: 100vh;
+}
+
 ::placeholder {
     user-select: none;
 }
@@ -222,7 +226,7 @@ input[type="button"]:active {
 }
 
 #top {
-    height: 50px;
+    height: 55px;
     width: 55px;
     display: none;
     /* Hidden by default */
